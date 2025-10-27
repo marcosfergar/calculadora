@@ -1,3 +1,5 @@
+import division,multiplicacion,resta,suma
+
 def calculadora():
     print("=== Calculadora básica ===")
     while True:
@@ -18,12 +20,14 @@ def calculadora():
         b = float(input("Ingresa el segundo número: "))
 
         if opcion == "1":
-            print("Resultado:", sumar(a, b))
+            print("Resultado:", suma.suma(a, b))
         elif opcion == "2":
-            print("Resultado:", restar(a, b))
+            print("Resultado:", resta.resta(a, b))
         elif opcion == "3":
-            print("Resultado:", multiplicar(a, b))
+            print("Resultado:", multiplicacion.multiplicar(a, b))
         elif opcion == "4":
-            print("Resultado:", dividir(a, b))
+            print("Resultado:", division.division(a, b))
         else:
             print("Opción no válida.")
+
+calculadora()
