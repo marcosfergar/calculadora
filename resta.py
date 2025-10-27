@@ -1,2 +1,2 @@
-def resta(a, ba):
-    return a - ba
+def resta(a, b):
+    return a - b
